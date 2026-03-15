@@ -3,23 +3,13 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "pl_transform_product",
-				"type": "DatabricksNotebook",
+				"name": "Validation1",
+				"type": "Validation",
 				"dependsOn": [],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/lab/testePipeline"
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureDatabricks1",
-					"type": "LinkedServiceReference"
+					"timeout": "0.12:00:00",
+					"sleep": 10
 				}
 			}
 		],
